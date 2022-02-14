@@ -43,7 +43,7 @@
         "reveal.js": "^3.8.0"
     },
     "scripts": {
-        "build": "gatsby build",
+        "build": "gatsby build --prefix-paths && rm -rf docs && mv public docs",
         "dev": "gatsby develop",
         "lint": "eslint **",
         "clear": "rm -rf .cache",
