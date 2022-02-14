@@ -1,9 +1,12 @@
 {
-    "name": "course-starter-python",
+    "name": "ec-workshops",
     "private": true,
-    "description": "Starter package to build interactive Python courses",
+    "description": "Earthcube workshops regarding DS tools",
     "version": "0.0.1",
-    "author": "Ines Montani <ines@explosion.ai>",
+    "homepage": "https://throughput-ec.github.io/ec-workshops",
+    "author": {"name": "Socorro Dominguez",
+        "email": "sedv8808@gmail.com"},
+    "license": "MIT",
     "dependencies": {
         "@illinois/react-use-local-storage": "^1.1.0",
         "@jupyterlab/outputarea": "^0.19.1",
@@ -52,6 +55,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/ines/course-starter-python"
-    }
+        "url": "https://throughput-ec.github.io/ec_workshops_py/"
+    },
+    "bugs": "https://throughput-ec.github.io/ec_workshops_py/issues"
 }
