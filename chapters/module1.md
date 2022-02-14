@@ -16,9 +16,21 @@ id: 1
 
 </exercise>
 
+
 <exercise id="2" title="Getting Started with Jupyter">
 
 [Getting Started](https://foundations.projectpythia.org/foundations/getting-started-jupyter.html)
 
 </exercise>
 
+
+
+<exercise id="3" title="Code Block">
+
+Trial
+
+<codeblock id="01_03">
+
+</codeblock>
+
+</exercise>
