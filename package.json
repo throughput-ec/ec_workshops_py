@@ -51,6 +51,7 @@
     },
     "devDependencies": {
         "browser-monads": "^1.0.0",
+        "gh-pages": "^2.0.1",
         "prettier": "^1.16.4"
     },
     "repository": {
