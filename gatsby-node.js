@@ -19,7 +19,7 @@ async function onCreateNode({
     if (node.internal.type === 'MarkdownRemark') {
         const slug = createFilePath({ node, getNode, basePath: 'chapters', trailingSlash: false })
         createNodeField({ name: 'slug', node, value: slug })
-    } else if (node.extension === 'r') {
+    } else if (node.extension === 'py') {
         // Load the contents of the Python file and make it available via GraphQL
         // https://www.gatsbyjs.org/docs/creating-a-transformer-plugin/
         const content = await loadNodeContent(node)

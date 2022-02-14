@@ -6,7 +6,6 @@ import { Link } from './link'
 import { H3 } from './typography'
 import Logo from '../../static/logo.svg'
 
-
 import '../styles/index.sass'
 import classes from '../styles/layout.module.sass'
 
@@ -62,10 +61,10 @@ const Layout = ({ isHome, title, description, children }) => {
                                     </section>
 
                                     <section className={classes.footerSection}>
-                                        <H3>About EarthCube</H3>
+                                        <H3>About me</H3>
                                         {meta.showProfileImage && (
                                             <img
-                                                src="https://github.com/throughput-ec/ec-workshops/blob/main/static/profile.jpg?raw=true"
+                                                src="/profile.jpg"
                                                 alt=""
                                                 className={classes.profile}
                                             />
