@@ -17,16 +17,32 @@ export default ({ data }) => {
     return (
         <Layout isHome>
             <Logo className={classes.logo} aria-label={siteMetadata.title} />
-
             <section>
-                <h1 className={classes.subtitle}>  Python </h1>
+
+                <h1 className={classes.subtitle}><center>Welcome to EarthCube Interactive Workshops!</center></h1>
                 <div className={classes.introduction}>
+                <p></p>
+
+                <center>
                 <p>
-                    Talk about the Hackathon this is meant for 
+                    These short courses will teach you how to conduct reproducible 
+                    research using Data Sciences tools.  
+
+                    You will be working with R Markdown, Docker containerization,
+                    and Git for version control.  
                 </p>
+                <p>
+                    After these modules, you will be able to process your own research
+                    in a format suitable for analysis, writing your own analysis functions,
+                    and deriving data-driven insights via RMarkdown files and Jupyter Notebooks.
+                </p>
+                <p>
+                    To visit the R-kernel version, click <a href="https://throughput-ec.github.io/ec-workshops/" target="_blank" >here</a>.
+
+                </p>
+                </center>
                 </div>
             </section>
-            
             {chapters.map(({ slug, title, description }) => (
                 <section key={slug} className={classes.chapter}>
                     <h2 className={classes.chapterTitle}>

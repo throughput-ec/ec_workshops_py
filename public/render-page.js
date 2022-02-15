@@ -35760,9 +35760,12 @@ __webpack_require__.r(__webpack_exports__);
     "aria-label": siteMetadata.title
   }), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("section", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("h1", {
     className: _styles_index_module_sass__WEBPACK_IMPORTED_MODULE_4___default.a.subtitle
-  }, "  Python "), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", null, "Welcome to EarthCube Interactive Workshops!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _styles_index_module_sass__WEBPACK_IMPORTED_MODULE_4___default.a.introduction
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "Talk about the Hackathon this is meant for"))), chapters.map(({
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "These short courses will teach you how to conduct reproducible research using Data Sciences tools. You will be working with R Markdown, Docker containerization, and Git for version control."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "After these modules, you will be able to process your own research in a format suitable for analysis, writing your own analysis functions, and deriving data-driven insights via RMarkdown files and Jupyter Notebooks."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "To visit the R-kernel version, click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+    href: "https://throughput-ec.github.io/ec-workshops/",
+    target: "_blank"
+  }, "here"), ".")))), chapters.map(({
     slug,
     title,
     description
