@@ -28,16 +28,18 @@ export default ({ data }) => {
                     These short courses will teach you how to conduct reproducible 
                     research using Data Sciences tools.  
 
-                    You will be working with R Markdown, Docker containerization,
+                    You will be working with Python, Jupyter, Docker containerization,
                     and Git for version control.  
+
                 </p>
                 <p>
                     After these modules, you will be able to process your own research
                     in a format suitable for analysis, writing your own analysis functions,
-                    and deriving data-driven insights via RMarkdown files and Jupyter Notebooks.
+                    and deriving data-driven insights via Jupyter Notebooks and RMarkdown files.
                 </p>
                 <p>
-                    To visit the R-kernel version, click <a href="https://throughput-ec.github.io/ec-workshops/" target="_blank" >here</a>.
+                    This page runs on a python3 kernel.
+                    To visit the R kernel version, click <a href="https://throughput-ec.github.io/ec-workshops/" target="_blank" >here</a>.
 
                 </p>
                 </center>
