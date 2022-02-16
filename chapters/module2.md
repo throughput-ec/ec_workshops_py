@@ -11,6 +11,8 @@ id: 2
 
 <exercise id="1" title="Getting Started with Conda">
 
-[Setting Up Conda](https://foundations.projectpythia.org/foundations/conda.html)
+Learn how to set up your environment with Conda.
+
+Read the following [tutorial](https://foundations.projectpythia.org/foundations/conda.html) to get started.
 
 </exercise>

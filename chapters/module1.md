@@ -1,7 +1,8 @@
 ---
-title: 'Module 1: Intro to Jupyter Notebooks and Python'
+title: 'Module 1: Intro to Python and Jupyter Notebooks'
 description:
-  'In this module, you will learn how to write your own Jupyter Notebook.'
+  'In this module, you will learn how to write basic Python code 
+  and how to use your Jupyter Notebooks.'
 prev: null
 next: /module2
 type: chapter
@@ -93,10 +94,10 @@ operations, random simulation, and much more.
 This section contains Project Pythia's tutorials on array computing with NumPy.  
 We recommend using the provided Binder link to run the code.
 
-[NumPy Basics](https://foundations.projectpythia.org/core/numpy/numpy-basics.html)
+[NumPy Basics](https://foundations.projectpythia.org/core/numpy/numpy-basics.html)  
 [NumPy Basics Binder](https://mybinder.org/v2/gh/ProjectPythia/pythia-foundations/main?urlpath=lab/tree/core/numpy/numpy-basics.ipynb)
 
-[Intermediate NumPy](https://foundations.projectpythia.org/core/numpy/intermediate-numpy.html)
+[Intermediate NumPy](https://foundations.projectpythia.org/core/numpy/intermediate-numpy.html)  
 [Intermediate NumPy Binder](https://mybinder.org/v2/gh/ProjectPythia/pythia-foundations/main?urlpath=lab/tree/core/numpy/intermediate-numpy.ipynb)
 
 Here is a Sandbox for you to apply what you learned.
@@ -141,7 +142,7 @@ The key feature to Matplotlib is its extensibility and the extensive documentati
 
 Check out Project Pythia's tutorials on Matplotlib!
 
-[Matplotlib Basics](https://foundations.projectpythia.org/core/matplotlib/matplotlib.html)
+[Matplotlib Basics](https://foundations.projectpythia.org/core/matplotlib/matplotlib.html)  
 [Matplotlib Basics Binder](https://mybinder.org/v2/gh/ProjectPythia/pythia-foundations/main?urlpath=lab/tree/core/matplotlib/matplotlib.ipynb)
 
 Here is a Sandbox for you to apply what you learned.
@@ -172,7 +173,7 @@ else:
 </exercise>
 
 
-<exercise id="5" title="Introduction to Cartopy">
+<exercise id="6" title="Introduction to Cartopy">
 
 ~~~
 Cartopy is a Python package designed for geospatial data processing in order 
@@ -192,7 +193,7 @@ Before doing the tutorials, make sure that you already have a basic familiarity 
 
 Cartopy’s cartographic features library includes shapefiles directly served by Natural Earth.
 
-[Introduction to Cartopy](https://foundations.projectpythia.org/core/cartopy/cartopy.html)
+[Introduction to Cartopy](https://foundations.projectpythia.org/core/cartopy/cartopy.html)  
 [Introduction to Cartopy Binder](https://mybinder.org/v2/gh/ProjectPythia/pythia-foundations/main?urlpath=lab/tree/core/cartopy/cartopy.ipynb)
 
 Here is a Sandbox for you to apply what you learned.
@@ -222,3 +223,15 @@ else:
 
 </exercise>
 
+<exercise id="7" title="Introduction to Pandas">
+
+Pandas is a very powerful library for working with tabular data (i.e. anything you might put in a spreadsheet – a common data type in the geosciences). It allows us to use labels for our data so that we can write expressive and robust code to manipulate the data.
+
+Key features of Pandas are the ability to read in tabular data, slice and dice data, and exploratory analysis tools native to the library.
+
+Follow this Project Pythia tutorial on Pandas.
+
+[Introduction to Pandas](https://foundations.projectpythia.org/core/pandas/pandas.html)  
+[Introduction to Pandas Binder](https://mybinder.org/v2/gh/ProjectPythia/pythia-foundations/main?urlpath=lab/tree/core/pandas/pandas.ipynb)
+
+</exercise>
