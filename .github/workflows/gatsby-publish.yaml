@@ -1,0 +1,30 @@
+name: Gatsby Publish
+
+on:
+  push:
+    branches:
+      main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the current code
+        uses: actions/checkout@v2.3.1
+      - name: Setup the git user as the Actions user
+        uses: fregante/setup-git-user@v1
+      - name: Install the most recent Node.js version.
+        uses: actions/setup-node@v1
+        with:
+          node-version: '14.x'
+      - name: Do a clean install of the required packages.
+        run: npm install
+      - name: Install Gatsby CLI
+        run: npm install -g gatsby-cli@2.12.34
+      - name: Install the gh-pages CLI
+        run: npm install gh-pages -g
+      - name: Build
+        env:
+          TOKEN: ${{ secrets.ACCESS_TOKEN }}
+        run: |
+          gatsby build --prefix-paths && gh-pages -d public -r https://git:$TOKEN@github.com/throughput-ec/ec_workshops_py.git
