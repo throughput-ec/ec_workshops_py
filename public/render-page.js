@@ -4400,8 +4400,8 @@ var fails = __webpack_require__(/*! ../internals/fails */ "./node_modules/gatsby
 module.exports = function (METHOD_NAME, argument) {
   var method = [][METHOD_NAME];
   return !!method && fails(function () {
-    // eslint-disable-next-line no-useless-call,no-throw-literal -- required for testing
-    method.call(null, argument || function () { throw 1; }, 1);
+    // eslint-disable-next-line no-useless-call -- required for testing
+    method.call(null, argument || function () { return 1; }, 1);
   });
 };
 
@@ -5782,10 +5782,10 @@ var store = __webpack_require__(/*! ../internals/shared-store */ "./node_modules
 (module.exports = function (key, value) {
   return store[key] || (store[key] = value !== undefined ? value : {});
 })('versions', []).push({
-  version: '3.21.0',
+  version: '3.21.1',
   mode: IS_PURE ? 'pure' : 'global',
   copyright: '© 2014-2022 Denis Pushkarev (zloirock.ru)',
-  license: 'https://github.com/zloirock/core-js/blob/v3.21.0/LICENSE',
+  license: 'https://github.com/zloirock/core-js/blob/v3.21.1/LICENSE',
   source: 'https://github.com/zloirock/core-js'
 });
 
@@ -6430,6 +6430,8 @@ function Minimatch (pattern, options) {
   assertValidPattern(pattern)
 
   if (!options) options = {}
+
+  pattern = pattern.trim()
 
   // windows support: need to use /, not \
   if (!options.allowWindowsEscape && path.sep !== '/') {
@@ -35762,7 +35764,7 @@ __webpack_require__.r(__webpack_exports__);
     className: _styles_index_module_sass__WEBPACK_IMPORTED_MODULE_4___default.a.subtitle
   }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", null, "Welcome to EarthCube Interactive Workshops!")), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("div", {
     className: _styles_index_module_sass__WEBPACK_IMPORTED_MODULE_4___default.a.introduction
-  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "These short courses will teach you how to conduct reproducible research using Data Sciences tools. You will be working with R Markdown, Docker containerization, and Git for version control."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "After these modules, you will be able to process your own research in a format suitable for analysis, writing your own analysis functions, and deriving data-driven insights via RMarkdown files and Jupyter Notebooks."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "To visit the R-kernel version, click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
+  }, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("center", null, /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "These short courses will teach you how to conduct reproducible research using Data Sciences tools. You will be working with Python, Jupyter, Docker containerization, and Git for version control."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "After these modules, you will be able to process your own research in a format suitable for analysis, writing your own analysis functions, and deriving data-driven insights via Jupyter Notebooks and RMarkdown files."), /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("p", null, "This page runs on a python3 kernel. To visit the R kernel version, click ", /*#__PURE__*/react__WEBPACK_IMPORTED_MODULE_0___default.a.createElement("a", {
     href: "https://throughput-ec.github.io/ec-workshops/",
     target: "_blank"
   }, "here"), ".")))), chapters.map(({
