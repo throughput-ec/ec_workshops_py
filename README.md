@@ -129,7 +129,9 @@ npm install
 **Warning:** You will be prompted to run "npm audit fix" to fix them.
 I do not recommend doing this as it may burn your site down.
 
-The output below will still build your course:
+
+During the build, you might see several ESLint errors. We are trying to fix them.
+However, the output below will still build your course:
 
 ~~~out
 found 572 vulnerabilities (4 low, 4 moderate, 564 high)
