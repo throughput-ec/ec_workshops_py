@@ -35,6 +35,7 @@ This space can be used as a little sandbox for you.
 To try it out, click on the "run" button to execute the following chunk of code. 
 
 <codeblock id="01_01">
+This is a hint, remember to load pandas
 
 </codeblock>
 
