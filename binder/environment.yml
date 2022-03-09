@@ -9,3 +9,4 @@ dependencies:
     - pandas
     - matplotlib
     - wasabi>=0.2.1,<1.1.0
+    - black==19.10b0
