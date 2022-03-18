@@ -1,44 +1,26 @@
 ---
-title: 'Module 3: Intro to GitHub'
+title: 'Module 3: Development best-practices - testing'
 description:
-  'This module will teach you about Version Control and how to use Git and Github.'
+  'In the module, you will learn about code testing and pytest.'
 prev: /module2
 next: /module4
 type: chapter
 id: 3
 ---
 
-<exercise id="1" title="Getting Started with Github">
-
-Python and Jupyter are cool technologies, but they only scratch the surface of why you might want to adopt Python for your geoscience workflow.
-
-This section from Project Pythia's tutorials will introduce GitHub, the de facto standard platform for collaboration and version control used by the open-source Python community.
-
-In the last exercise, you will configure your GitHub account for secure logins via ssh and/or https.
 
 
-[What is GitHub?](https://foundations.projectpythia.org/foundations/github/what-is-github.html)
+<exercise id="1" title="Testing" type="slides">
 
-[What is a GitHub Repository?](https://foundations.projectpythia.org/foundations/github/github-repos.html)
-
-[Issues & Discussions](https://foundations.projectpythia.org/foundations/github/github-issues.html)
-
-[Cloning & Forking a Repository](https://foundations.projectpythia.org/foundations/github/github-cloning-forking.html)
-
-[GitHub Setup](https://foundations.projectpythia.org/foundations/github/github-setup-advanced.html)
+<slides source="chapter7_04_testing">
+</slides>
 
 </exercise>
 
-<exercise id="2" title="Intermediate Github">
 
-Now that you set up your GitHub account, it is time to start collaborating.
+<exercise id="2" title="pytest" type="slides">
 
-Learn about branches, pull requests, and version control systems.
-
-[Git Branches](https://foundations.projectpythia.org/foundations/github/git-branches.html)
-
-[Creating a Pull Request](https://foundations.projectpythia.org/foundations/github/github-pull-request.html)
-
-[Version Control with Git](https://foundations.projectpythia.org/foundations/github/basic-git.html)
+Calm Code [pytest intro](https://calmcode.io/pytest/introduction.html): Watch videos 1 - 6
 
 </exercise>
+
