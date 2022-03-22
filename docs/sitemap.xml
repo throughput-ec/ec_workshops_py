@@ -3,7 +3,5 @@
 <url> <loc>https://www.earthcube.org/ec_workshops_py/module1</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.earthcube.org/ec_workshops_py/module2</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.earthcube.org/ec_workshops_py/module3</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.earthcube.org/ec_workshops_py/reference-and-resources</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://www.earthcube.org/ec_workshops_py/module4</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://www.earthcube.org/ec_workshops_py/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
