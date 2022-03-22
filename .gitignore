@@ -47,3 +47,14 @@ vignettes/*.pdf
 node_modules/
 package-lock.json
 public
+
+
+# binder
+.bash_logout
+.bashrc
+.conda/
+.ipython/
+.jupyter-server-log.txt
+.jupyter/
+.local/
+.profile
