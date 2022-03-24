@@ -1,0 +1,45 @@
+field,normalized_field
+A/W,A/W
+Additional zone name,Additional zone name
+Additional zone name (short),Additional zone name (short)
+Bottom Depth [m],Bottom Depth [m]
+Bottom Depth[m] [m],Bottom Depth [m]
+Bottom [cm],Bottom [cm]
+Bottom[cm] [cm],Bottom [cm]
+Comment (general),Comments
+Comments,Comments
+Core,Core
+Core-Sect,Core-Sect
+Datum name,Datum name
+Exp,Exp
+Extra Sample ID Data,Extra Sample ID Data
+Fragmentation,Fragmentation
+Fragmentation rank [auto-pop],Fragmentation rank [auto-pop]
+Genus/species (upper zone),Genus/species (upper zone)
+Genus/species lower zone),Genus/species (lower zone)
+Group Abundance,Group Abundance
+Group abundance,Group Abundance
+Group abundance (%),Group Abundance
+Hole,Hole
+Label ID,Sample
+PF Preservation,PF Preservation
+Preservation,Preservation
+Sample,Sample
+Sample comment,Comments
+Section,Section
+Site,Site
+Top Depth [m],Top Depth [m]
+Top Depth[m] [m],Top Depth [m]
+Top [cm],Top [cm]
+Top[cm] [cm],Top [cm]
+Type,Type
+Type (lower zone),Type (lower zone)
+Upper boundary age av. [Ma],Upper boundary age av. [Ma]
+Zone author (year),Zone author (year)
+Zone group,Zone group
+Zone name,Zone name
+Zone name (short),Zone name (short)
+pc_abundance_name_mode,pc_abundance_name_mode
+pc_fossil_group,pc_fossil_group
+pc_fossil_name,pc_fossil_name
+physical_constituent_name,physical_constituent_name
