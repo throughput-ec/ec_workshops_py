@@ -4,35 +4,14 @@ import pytest
 import numpy as np
 
 from scripts.normalize_data import (
-    normalize_columns,
     remove_whitespace_from_column_names,
     normalize_expedition_section_cols,
     remove_bracket_text,
-    remove_whitespace_from_dataframe,
+    remove_whitespace,
     ddm2dec,
-    remove_empty_unnamed_columns
+    remove_empty_unnamed_columns,
+    normalize_columns
 )
-
-
-class TestNormalizeColumns:
-    def test_replaces_columns_if_value_in_all_columns_matches_variants(self):
-        all_cols = ["a", "B"]
-        variants = {"A", "a", "aa"}
-        new_col = "AAA"
-
-        res = normalize_columns(variants, new_col, all_cols)
-
-        assert res == ["AAA", "B"]
-
-    def test_returns_all_columns_if_all_columns_does_not_match_variants(self):
-        all_cols = ["a", "B"]
-        variants = {"BB", "bb", "b"}
-        new_col = "BBB"
-
-        res = normalize_columns(variants, new_col, all_cols)
-
-        assert res == ["a", "B"]
-
 
 class RemoveSpacesFromColumns:
     def test_replaces_leading_and_trailing_spaces_from_columns(self):
@@ -252,7 +231,7 @@ class TestRemoveWhitespaceFromDataframe:
         }
         expected = pd.DataFrame(data2)
 
-        remove_whitespace_from_dataframe(df)
+        remove_whitespace(df)
 
         assert_frame_equal(df, expected)
 
@@ -270,7 +249,7 @@ class TestRemoveWhitespaceFromDataframe:
         }
         expected = pd.DataFrame(data2)
 
-        remove_whitespace_from_dataframe(df)
+        remove_whitespace(df)
 
         assert_frame_equal(df, expected)
 
@@ -280,7 +259,7 @@ class TestRemoveWhitespaceFromDataframe:
         data2 = {'A': ['A', 'B', 'C', '']}
         expected = pd.DataFrame(data2)
 
-        remove_whitespace_from_dataframe(df)
+        remove_whitespace(df)
 
         assert_frame_equal(df, expected)
 
@@ -290,7 +269,7 @@ class TestRemoveWhitespaceFromDataframe:
         data2 = {'A': ['A', 'B', 'C', '']}
         expected = pd.DataFrame(data2)
 
-        remove_whitespace_from_dataframe(df)
+        remove_whitespace(df)
 
         assert_frame_equal(df, expected)
 
@@ -348,5 +327,50 @@ class TestRemoveEmptyUnnamedColumns:
         expected = pd.DataFrame(data)
 
         remove_empty_unnamed_columns(df)
+
+        assert_frame_equal(df, expected)
+
+
+class TestNormalizeColumns:
+    def test_replace_column_name_with_value_from_columns_mapping(self):
+        columns_mapping = {"aa": "A"}
+        data = {"aa": [1]}
+        df = pd.DataFrame(data)
+        data = {"A": [1]}
+        expected = pd.DataFrame(data)
+
+        normalize_columns(df, columns_mapping)
+
+        assert_frame_equal(df, expected)
+
+    def test_replace_multiple_column_name_with_value_from_columns_mapping(self):
+        columns_mapping = {"aa": "A", "b b": "B"}
+        data = {"aa": [1], "b b": [2]}
+        df = pd.DataFrame(data)
+        data = {"A": [1], "B": [2]}
+        expected = pd.DataFrame(data)
+
+        normalize_columns(df, columns_mapping)
+
+        assert_frame_equal(df, expected)
+
+    def test_does_not_affect_columns_not_in_columns_mapping(self):
+        columns_mapping = {"aa": "A", "b b": "B"}
+        data = {"aa": [1], "b b": [2], "cc": [3]}
+        df = pd.DataFrame(data)
+        data = {"A": [1], "B": [2], "cc": [3]}
+        expected = pd.DataFrame(data)
+
+        normalize_columns(df, columns_mapping)
+
+        assert_frame_equal(df, expected)
+
+    def test_does_not_affect_columns_if_columns_mapping_has_no_value(self):
+        columns_mapping = {"aa": None, "bb": "", "cc": np.nan}
+        data = {"aa": [1], "b b": [2], "cc": [3]}
+        df = pd.DataFrame(data)
+        expected = pd.DataFrame(data)
+
+        normalize_columns(df, columns_mapping)
 
         assert_frame_equal(df, expected)

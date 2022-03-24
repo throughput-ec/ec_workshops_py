@@ -127,11 +127,6 @@ def create_sample_cols(series):
     return df
 
 
-def normalize_columns(variants, replacement, all_cols):
-    """Replace variations of column name with a standard column name"""
-    return [replacement if column in variants else column for column in all_cols]
-
-
 def remove_whitespace_from_column_names(df):
     """remove leading and trailing spaces from dataframe columns"""
     return [col.strip() for col in df.columns]
@@ -139,21 +134,22 @@ def remove_whitespace_from_column_names(df):
 
 def remove_bracket_text(df):
     """remove trailing text inside brackets."""
-    df.replace(r' *\[.*\] *$', '', regex=True, inplace=True)
+    df.replace(r" *\[.*\] *$", "", regex=True, inplace=True)
     return df
 
 
-def remove_whitespace_from_dataframe(df):
+def remove_whitespace(df):
     """remove leading and trailing spaces from dataframe rows"""
     for col in df.columns:
         # only process string columns
-        if df[col].dtype == 'object':
+        if df[col].dtype == "object":
             if len(df[df[col].isna()]) > 0:
-                df[col].fillna('', inplace=True)
+                df[col].fillna("", inplace=True)
             try:
                 df[col] = df[col].map(str.strip)
             except TypeError:
                 print('Must call fillna("") before using whitespace_remover.')
+
 
 # https://gis.stackexchange.com/questions/398021/converting-degrees-decimal-minutes-to-decimal-degrees-in-python
 def ddm2dec(dms_str):
@@ -161,18 +157,18 @@ def ddm2dec(dms_str):
     if pd.isna(dms_str):
         return
 
-    sign = -1 if re.search('[swSW]', dms_str) else 1
+    sign = -1 if re.search("[swSW]", dms_str) else 1
 
-    matches = re.search(r'(\d+) (\d*).(\d*)', dms_str)
+    matches = re.search(r"(\d+) (\d*).(\d*)", dms_str)
     if matches:
         numbers = matches.groups()
     else:
-        matches = re.search(r'(\d+)° *(\d*).(\d*)\'', dms_str)
+        matches = re.search(r"(\d+)° *(\d*).(\d*)\'", dms_str)
         numbers = matches.groups()
 
     degree = numbers[0]
     minute_decimal = numbers[1]
-    decimal_val = numbers[2] if len(numbers) > 2 else '0'
+    decimal_val = numbers[2] if len(numbers) > 2 else "0"
     minute_decimal += "." + decimal_val
 
     return sign * (int(degree) + float(minute_decimal) / 60)
@@ -180,11 +176,24 @@ def ddm2dec(dms_str):
 
 def remove_empty_unnamed_columns(df):
     for col in df.columns:
-        if re.match(r'^Unnamed: \d+$', col):
-            if len(df[col].dropna(how='all')) == 0:
+        if re.match(r"^Unnamed: \d+$", col):
+            if len(df[col].dropna(how="all")) == 0:
                 del df[col]
 
 
 def print_df(df, num_rows=5):
     print(df.shape)
     return df.head(num_rows)
+
+
+def normalize_columns(df, columns_mapping):
+    """Replace variations of column name with a standard column name"""
+    temp = {}
+    for col in df.columns:
+        if col in columns_mapping:
+            value = columns_mapping[col]
+            if value and value == value:
+                temp[col] = value
+
+    if len(temp) > 0:
+        df.rename(columns=temp, inplace=True)
