@@ -5,9 +5,11 @@ dependencies:
   - python
   - numpy
   - pip
+  - seaborn
+  - cartopy
+  - geopandas
   - pip:
     - pandas
     - matplotlib
     - wasabi>=0.2.1,<1.1.0
     - black==19.10b0
-    - Cartopy
