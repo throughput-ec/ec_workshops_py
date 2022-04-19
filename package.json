@@ -58,7 +58,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://throughput-ec.github.io/ec_workshops_py/"
+        "url": "https://github.com/wykhuh/ec_workshops_py"
     },
-    "bugs": "https://throughput-ec.github.io/ec_workshops_py/issues"
+    "bugs": "https://github.com/wykhuh/ec_workshops_py/issues"
 }

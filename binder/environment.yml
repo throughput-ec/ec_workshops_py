@@ -1,4 +1,3 @@
-
 name: example-environment
 channels:
   - conda-forge
@@ -6,9 +5,9 @@ dependencies:
   - python
   - numpy
   - pip
-  - ipyleaflet
-  - geopandas
   - pip:
     - pandas
     - matplotlib
+    - svgpath2mpl
     - wasabi>=0.2.1,<1.1.0
+    - black==19.10b0
