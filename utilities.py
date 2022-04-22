@@ -485,10 +485,10 @@ def import_all():
     import time
 
     #data visualization
-    %matplotlib inline
+    #%matplotlib inline
     import matplotlib.pylab as plt
     from matplotlib import ticker
-    %matplotlib inline
+    #%matplotlib inline
 
     #used for map projections
     import cartopy.crs as ccrs
