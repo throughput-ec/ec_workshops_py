@@ -20,14 +20,6 @@ type: slides
 
 ---
 
-If you want to launch some sample binders take a look at:
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sedv8808/my-first-python-binder/main?labpath=my-folium-map-notebook.ipynb) Jupyter Binder
-
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/sedv8808/my-first-R-binder/main?urlpath=rstudio) RStudio Binder
-
----
-
 # Advantages of Binder
 
 - Binder lets you share links to interactive data analytics environments. This is great for workshops, tutorials, and classes.

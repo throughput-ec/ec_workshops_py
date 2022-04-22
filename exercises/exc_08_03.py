@@ -1,5 +1,5 @@
-from utils import import_all
-from utils import check_error_message
+from utilities import import_all
+from utilities import check_error_message
 
 # prefix to use with all API queries
 URL_PREFIX = 'https://argovis-api.colorado.edu'
