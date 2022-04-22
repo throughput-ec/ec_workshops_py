@@ -6,27 +6,27 @@ type: slides
 
 ---
 
-## Continuous Integration (CI)
+# Continuous Integration (CI)
 
 - CI is the practice of frequently integrating code changes from contributors to a shared repository. 
 - Often the submission of code to a shared repository is combined with automated testing to increase code dependability and quality.
 
-**Why use CI + automated testing**
+#### Why use CI + automated testing
 
 - detects errors sooner
 - reduces the amount of code to be examined when debugging
 - facilitates merging
 - ensures new code additions do not introduce errors
 
---- 
+---
 
-## Continous Development (CD)
+ # Continous Development (CD)
 
 - Defined as the practice of automating the deployment of software that has successfully run through your test-suite.
 
 - For example, upon merging a pull request to master, an automation process builds the Python package and publishes to PyPI without further human intervention.
 
-**Why use CD?**
+#### Why use CD?
 
 - little to no effort in deploying new version of the software allows new features to be rolled out quickly and frequently
 
@@ -44,7 +44,10 @@ type: slides
 
 - You can create workflows that build and test every pull request to your repository, or deploy merged pull requests to production.
 
-- GitHub Actions lets you run workflows when other events happen in your repository. For example, you can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository.
+---
+
+- GitHub Actions lets you run workflows when other events happen in your repository. 
+  - For example, you can run a workflow to automatically add the appropriate labels whenever someone creates a new issue in your repository.
 
 - GitHub provides Linux, Windows, and macOS virtual machines to run your workflows, or you can host your own self-hosted runners in your own data center or cloud infrastructure.
 
@@ -72,47 +75,53 @@ type: slides
 
 2. Click on the “Actions” tab
 
+<a href="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/00_gh_actions_button.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/00_gh_actions_button.png?raw=true" alt="GH Actions" width=75% align="center" title="Click to zoom in"> 
+</a>
+
+---
+
 3. Click on the first “Simple workflow” configure button
 
-<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/00_github_actions.png?raw=true" target="_blank">
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/00_github_actions.png?raw=true" alt="GH Actions" width=45% align="center" title="Click to zoom in"> 
+<a href="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/01_gh_actions_wf.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/01_gh_actions_wf.png?raw=true" alt="GH Actions" width=75% align="center" title="Click to zoom in"> 
 </a>
 
 ---
 
 4. Click on the two green commit buttons to add this workflow file
 
-<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/01_github_actions.png?raw=true" target="_blank">
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/01_github_actions.png?raw=true" alt="Commits" width=45% align="center" title="Click to zoom in"> 
+<a href="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/03_sec_commit_bt.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/03_sec_commit_bt.png?raw=true" alt="Commits" width=45% align="center" title="Click to zoom in"> 
 
 ---
 
 5. Go back to the “Actions” tab. It now looks different:
 
-<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/02_github_actions.png?raw=true" target="_blank">
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/02_github_actions.png?raw=true" alt="Actions" width=45% align="center" title="Click to zoom in"> 
+<a href="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/04_nw_tab.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/04_nw_tab.png?raw=true" alt="Actions" width=45% align="center" title="Click to zoom in"> 
 
 
 ---
 
 6. Click on the message associated with the event that created the action:
 
-<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/03_github_actions.png?raw=true" target="_blank">
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/03_github_actions.png?raw=true" alt="Message" width=45% align="center" title="Click to zoom in"> 
+<a href="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/05_mn_wf.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/05_mn_wf.png?raw=true" alt="Message" width=45% align="center" title="Click to zoom in"> 
 
 ---
 
 7. Click on the build link:
 
-<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/04_github_actions.png?raw=true" target="_blank">
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/04_github_actions.png?raw=true" alt="Actions" width=45% align="center" title="Click to zoom in"> 
+<a href="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/06_run_wf.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/06_run_wf.png?raw=true" alt="Actions" width=45% align="center" title="Click to zoom in"> 
 
 ---
 
 8. Click on the arrow inside the build logs to expand a section and see the output of the action Check all of the arrows and see what happens at each step.
 
-<a href="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/05_github_actions.png?raw=true" target="_blank">
-<img src="https://github.com/throughput-ec/ec-workshops/blob/main/static/module7/05_github_actions.png?raw=true" alt="Actions" width=45% align="center" title="Click to zoom in"> 
+<a href="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/08_wf_ran2.png?raw=true" target="_blank">
+<img src="https://github.com/throughput-ec/ec_workshops_py/blob/main/static/module7/08_wf_ran2.png?raw=true" alt="Actions" width=45% align="center" title="Click to zoom in"> 
 
 ---
 

@@ -9,9 +9,9 @@ type: slides
 ## What is Docker?
 **Motivation**
 
-<img src="https://derickbailey.com/wp-content/uploads/2017/02/WOMM.jpg" alt="Motivation Docker" width=45% align="center">
+<img src="https://res.cloudinary.com/practicaldev/image/fetch/s--lIJpZE9A--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://user-images.githubusercontent.com/34328907/78120341-7b56f900-7429-11ea-9b3f-1a5e17b813da.png" alt="Motivation Docker" width=45% align="center">
 
-[Source](https://derickbailey.com/2017/02/08/digging-into-the-works-on-my-machine-problem/)
+[Source](https://res.cloudinary.com/practicaldev/image/fetch/s--lIJpZE9A--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://user-images.githubusercontent.com/34328907/78120341-7b56f900-7429-11ea-9b3f-1a5e17b813da.png)
 
 ---
 

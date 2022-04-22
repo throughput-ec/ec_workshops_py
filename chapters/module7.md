@@ -56,11 +56,3 @@ id: 7
 </slides>
 
 </exercise>
-
-<exercise id="7" title="What We Learned" type="slides">
-
-<slides source="chapter7_07_what_we_learned">
-</slides>
-
-</exercise>
-
