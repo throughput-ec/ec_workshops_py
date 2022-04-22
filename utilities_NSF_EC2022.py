@@ -473,3 +473,27 @@ def interpolate(profile, levels, method='pchip'):
     else:
         interpolated_profile['data_warnings'] = ['data_interpolated']
     return interpolated_profile
+
+def import_all():
+    import requests
+    import numpy as np
+    import pandas as pd
+    from datetime import datetime, timedelta, date
+
+    #import xarray as xr
+    import os
+    import time
+
+    #data visualization
+    %matplotlib inline
+    import matplotlib.pylab as plt
+    from matplotlib import ticker
+    %matplotlib inline
+
+    #used for map projections
+    import cartopy.crs as ccrs
+    import cartopy.feature as cft
+    from cartopy.mpl.gridliner import LONGITUDE_FORMATTER, LATITUDE_FORMATTER
+
+    import warnings
+    warnings.filterwarnings('ignore')
