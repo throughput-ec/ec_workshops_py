@@ -1,6 +1,6 @@
 # EarthCube Workshops
 
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/throughput-ec/ec-workshops/binder)
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/throughput-ec/ec_workshops_py/binder)
 
 [![example workflow](https://github.com/throughput-ec/ec-workshops/actions/workflows/gatsby-publish.yaml/badge.svg)](https://github.com/throughput-ec/ec-workshops/actions)
 
