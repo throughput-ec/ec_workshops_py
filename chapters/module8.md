@@ -1,8 +1,8 @@
 ---
-title: 'Module 8: Argoviz'
+title: 'Module 8: Argovis'
 description:
-  'This module will help you work with the Argoviz Database and showcase a detailed example.
-  This Module has been produced by the Argoviz team.'
+  'This module will help you work with the Argovis Database and showcase a detailed example.
+  This Module has been produced by the Argovis team.'
 
 prev: module6
 next: null
@@ -10,9 +10,9 @@ type: chapter
 id: 8
 ---
 
-<exercise id="0" title="Intro to Argoviz">
+<exercise id="0" title="Intro to Argovis">
 
-You will learn more about the Argoviz API during the hackathon.
+You will learn more about the Argovis API during the hackathon.
 
 In order to get started, make sure that you load your libraries and  
 have the URL prefix defined:
