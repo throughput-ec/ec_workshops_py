@@ -4,7 +4,7 @@ description:
   'This module will help you work with the Argoviz Database and showcase a detailed example.
   This Module has been produced by the Argoviz team.'
 
-prev: null
+prev: module6
 next: null
 type: chapter
 id: 8

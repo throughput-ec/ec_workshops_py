@@ -3,7 +3,7 @@ title: 'Module 7: Development best-practices including FAIR data principles'
 description:
   'This module will teach you different aspects in regards to Data Workflows, handling filenames and best practices such as testing, continuous integration and licensing.'
 prev: /module6
-next: null
+next: /module8
 type: chapter
 id: 7
 ---
