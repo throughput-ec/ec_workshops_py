@@ -29,8 +29,11 @@ ans = check_error_message(ans=d,writeFlag=True)
 if np.isnan(ans):
     df = pd.DataFrame(d)
 
-# Explore different components of the dataset
+# Printing column names as the Data Frame is too wide
+# let's store longitude and latitude for the profiles in the dataframe
+lon = [x['coordinates'][0] for x in df['geolocation']]
+lat = [x['coordinates'][1] for x in df['geolocation']]
 
-print(df.info())
 
-df['data_keys_mode']
+print("lat", lat)
+print("long", lon)

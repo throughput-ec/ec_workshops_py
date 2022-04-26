@@ -29,8 +29,5 @@ ans = check_error_message(ans=d,writeFlag=True)
 if np.isnan(ans):
     df = pd.DataFrame(d)
 
-# Explore different components of the dataset
-
-print(df.info())
-
-df['data_keys_mode']
+# Printing column names as the Data Frame is too wide
+df.columns

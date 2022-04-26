@@ -1,6 +1,5 @@
-### NO NEED TO EDIT THIS CELL for NSF EC TAC educational modules
-#
-# prefix to use with all API queries
-URL_PREFIX = 'https://argovis-api.colorado.edu'
-# users that have an API key would use it in their code (no need to do so here)
-API_KEY   = ''
+startDate = '2018-05-29T00:00:00Z'
+endDate   = '2018-05-31T00:00:00Z'
+
+polygon = '[[61.096076,25.106205],[51.933279,10.054482],[60.37706,9.236052],[68.777189,8.221804],[77.130969,7.034482],[71.404221,19.816425],[61.096076,25.106205]]'
+print(startDate, endDate, polygon)
